@@ -26,7 +26,7 @@ header {
 h3 {
 text-align: center;
 color: var(--bg-color);
-padding: 2%;
+padding: 0 2%;
 }
 
 
@@ -88,6 +88,13 @@ main {
     flex: 1 0 auto;
 }
 
+img {
+    width: 300px;
+    height: 300px;
+    border-radius: 15px;
+    margin: 10px 30px;
+}
+
 .choiceTxt{
     text-align: center;
     width: 200px;
@@ -132,5 +139,5 @@ footer div a {
     color: white;
 }
 footer div a:hover {
-    font-size: 150%;
+    font-size: 120%;
 }

@@ -71,11 +71,11 @@ const createCompChoice = function () {
   const choiceArr = ["Rock", "Paper", "Scissors"];
   compChoiceEl.textContent = choiceArr[choiceNum];
   if (choiceArr[choiceNum] === "Rock") {
-    compImgEl.setAttribute.src = randomImg(rockImages);
+    compImgEl.src = randomImg(rockImages);
   } else if (choiceArr[choiceNum] === "Paper") {
-    compImgEl.setAttribute.src = randomImg(paperImages);
+    compImgEl.src = randomImg(paperImages);
   } else {
-    compImgEl.setAttribute.src = randomImg(scissorImages);
+    compImgEl.src = randomImg(scissorImages);
   }
 };
 
@@ -83,7 +83,7 @@ const rockHandler = function (e) {
   e.preventDefault();
   userChoice = "Rock";
   userChoiceEl.textContent = "Rock";
-  userImgEl.setAttribute.src = randomImg(rockImages);
+  userImgEl.src = randomImg(rockImages);
   gameHandler();
 };
 
@@ -91,7 +91,7 @@ const paperHandler = function (e) {
   e.preventDefault();
   userChoice = "Paper";
   userChoiceEl.textContent = "Paper";
-  userImgEl.setAttribute.src = randomImg(paperImages);
+  userImgEl.src = randomImg(paperImages);
   gameHandler();
 };
 
@@ -99,7 +99,7 @@ const scissorsHandler = function (e) {
   e.preventDefault();
   userChoice = "Scissors";
   userChoiceEl.textContent = "Scissors";
-  userImgEl.setAttribute.src = randomImg(scissorsImages);
+  userImgEl.src = randomImg(scissorImages);
   gameHandler();
 };
 
@@ -112,7 +112,8 @@ const gameHandler = function () {
     (userChoice === "Paper" && compChoice === "Rock") ||
     (userChoice === "Scissors" && compChoice === "Paper")
   ) {
-    userScore++;
+    ++userScore;
+    userScoreEl.textContent = `User Score: ${userScore}`;
     winnerDisplayEl.textContent = "You win!";
   }
   // Lose scenarios
@@ -121,7 +122,8 @@ const gameHandler = function () {
     (compChoice === "Paper" && userChoice === "Rock") ||
     (compChoice === "Scissors" && userChoice === "Paper")
   ) {
-    compScore++;
+    ++compScore;
+    compScoreEl.textContent = `Opponent Score: ${compScore}`;
     winnerDisplayEl.textContent = "You lose!";
   }
   // Tie scenarios
@@ -130,7 +132,8 @@ const gameHandler = function () {
     (userChoice === "Paper" && compChoice === "Paper") ||
     (userChoice === "Scissors" && compChoice === "Scissors")
   ) {
-    tieScore++;
+    ++tieScore;
+    tieScoreEl.textContent = `Ties: ${tieScore}`;
     winnerDisplayEl.textContent = "It's a tie!";
   }
 };
