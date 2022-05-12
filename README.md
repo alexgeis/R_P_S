@@ -8,8 +8,9 @@ This page is a rock, paper, scissors application w/ dynamic images and a scorebo
 -Storage of user scores (local or DB)
 -CSS/JS Animations
 -winner/loser display improvement - more visuals around winners/losers. Specifically, some visual indicator to point to the winner (a large arrow in the middle, or something similar)
--PWA conversion
 -Implement a nodeJS/express backend server
+-PWA conversion
+-Deployment
 -Update responsiveness of main section - could stack more smoothly
 
 ## Dev Contact
