@@ -1,0 +1,39 @@
+html {
+
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    min-height: 100vh;
+    margin: 0;
+}
+
+header {
+    background-color: darkcyan;
+    color: white;
+    text-align: center;
+}
+
+main {
+    padding: 30px;
+}
+#choices {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+
+
+
+footer {
+    display: flex;
+    justify-content: center;
+    padding: 60px;
+    background-color: darkcyan;
+    color: white;
+}

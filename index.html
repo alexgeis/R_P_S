@@ -4,18 +4,47 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
     <title>Rock, Paper, Scissors</title>
   </head>
   <body>
     <header>
       <h1>Rock, Paper, Scissors</h1>
-      <p>a battle of wits and mostly hands</p>
+      <p>a battle of wits, fists, and fingers</p>
     </header>
     <main>
-      <section>
-        <div class="user"></div>
-        <div class="computer"></div>
+      <section id="choices">
+        <div class="user">
+          <div id="userChoiceDisplay">
+            <img
+              src="http://placekitten.com/300/300"
+              alt="user's rock, paper, scissor choice"
+              id="userChoiceImg"
+            />
+            <p id="userChoiceTxt">Rock</p>
+          </div>
+
+          <h2 id="userName"></h2>
+        </div>
+        <div class="computer">
+          <div id="compChoiceDisplay">
+            <img
+              src="http://placekitten.com/300/300"
+              alt="computer's rock, paper, scissor choice"
+              id="compChoiceImg"
+            />
+            <p id="compChoiceTxt">Scissors</p>
+          </div>
+
+          <h2 id="compName"></h2>
+        </div>
       </section>
     </main>
+    <section>
+      <button id="rockBtn"></button>
+      <button id="paperBtn"></button>
+      <button id="scissorsBtn"></button>
+    </section>
+    <footer><div></div></footer>
   </body>
 </html>
