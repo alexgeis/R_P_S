@@ -110,7 +110,7 @@ main {
 #winnerDisplay {
     text-align: center;
     font-size: 24px;
-    color: var(--clr-3)
+    color: var(--clr-3);
 }
 
 footer {

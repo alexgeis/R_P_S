@@ -70,14 +70,20 @@ const createCompChoice = function () {
   const choiceNum = Math.floor(Math.random() * 3);
   const choiceArr = ["Rock", "Paper", "Scissors"];
   compChoiceEl.textContent = choiceArr[choiceNum];
-  userImgEl.setAttribute.src = 
+  if (choiceArr[choiceNum] === "Rock") {
+    compImgEl.setAttribute.src = randomImg(rockImages);
+  } else if (choiceArr[choiceNum] === "Paper") {
+    compImgEl.setAttribute.src = randomImg(paperImages);
+  } else {
+    compImgEl.setAttribute.src = randomImg(scissorImages);
+  }
 };
 
 const rockHandler = function (e) {
   e.preventDefault();
   userChoice = "Rock";
   userChoiceEl.textContent = "Rock";
-  userImgEl
+  userImgEl.setAttribute.src = randomImg(rockImages);
   gameHandler();
 };
 
@@ -85,6 +91,7 @@ const paperHandler = function (e) {
   e.preventDefault();
   userChoice = "Paper";
   userChoiceEl.textContent = "Paper";
+  userImgEl.setAttribute.src = randomImg(paperImages);
   gameHandler();
 };
 
@@ -92,6 +99,7 @@ const scissorsHandler = function (e) {
   e.preventDefault();
   userChoice = "Scissors";
   userChoiceEl.textContent = "Scissors";
+  userImgEl.setAttribute.src = randomImg(scissorsImages);
   gameHandler();
 };
 
