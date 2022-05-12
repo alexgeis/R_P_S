@@ -1,1 +1,17 @@
 # R_P_S
+
+This page is a rock, paper, scissors application w/ dynamic images and a scoreboard. A kitten vs. puppy showdown is shown on pageload, and from there the user can play an infinite number of R/P/S games.
+
+## Future Development
+
+-API Integration for random images
+-Storage of user scores (local or DB)
+-CSS/JS Animations
+-winner/loser display improvement - more visuals around winners/losers. Specifically, some visual indicator to point to the winner (a large arrow in the middle, or something similar)
+-PWA conversion
+-Implement a nodeJS/express backend server
+-Update responsiveness of main section - could stack more smoothly
+
+## Dev Contact
+
+[Alex Geis - GitHub](https://github.com/alexgeis)

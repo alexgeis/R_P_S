@@ -3,8 +3,9 @@
     --clr-2: #fdc500;
     --clr-3: #d1105a;
 }
-html {
 
+html {
+    box-sizing: border-box;
 }
 
 body {
@@ -28,7 +29,6 @@ text-align: center;
 color: var(--bg-color);
 padding: 0 2%;
 }
-
 
 #btns {
     display: flex;
@@ -59,15 +59,18 @@ button:active {
     color: var(--clr-2);
     border: none;
 }
+
 button:focus {
     box-shadow: 2px 2px 2px 2px;
 }
+
 main {
     padding: 0 30px;
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
 }
+
 #choices {
     display: flex;
     justify-content: space-around;
@@ -84,6 +87,7 @@ main {
     flex-direction: column;
     padding: 20px 10px;
 }
+
 .computer {
     flex: 1 0 auto;
 }
@@ -118,6 +122,7 @@ img {
     text-align: center;
     font-size: 24px;
     color: var(--clr-3);
+    padding: 2%;
 }
 
 footer {
@@ -132,7 +137,6 @@ footer div {
     font-size: 24px;
     font-family: monospace;
     color: white;
-
 }
 
 footer div a {
