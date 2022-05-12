@@ -4,6 +4,8 @@ const paperBtn = document.getElementById("paperBtn");
 const scissorsBtn = document.getElementById("scissorsBtn");
 const userChoiceEl = document.getElementById("userChoiceTxt");
 const compChoiceEl = document.getElementById("compChoiceTxt");
+const userImgEl = document.getElementById("userChoiceImg");
+const compImgEl = document.getElementById("compChoiceImg");
 const userScoreEl = document.getElementById("userScore");
 const compScoreEl = document.getElementById("compScore");
 const tieScoreEl = document.getElementById("tieScore");
@@ -68,12 +70,14 @@ const createCompChoice = function () {
   const choiceNum = Math.floor(Math.random() * 3);
   const choiceArr = ["Rock", "Paper", "Scissors"];
   compChoiceEl.textContent = choiceArr[choiceNum];
+  userImgEl.setAttribute.src = 
 };
 
 const rockHandler = function (e) {
   e.preventDefault();
   userChoice = "Rock";
   userChoiceEl.textContent = "Rock";
+  userImgEl
   gameHandler();
 };
 
