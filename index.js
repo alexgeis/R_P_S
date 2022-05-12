@@ -4,6 +4,9 @@ const paperBtn = document.getElementById("paperBtn");
 const scissorsBtn = document.getElementById("scissorsBtn");
 const userChoiceEl = document.getElementById("userChoiceTxt");
 const compChoiceEl = document.getElementById("compChoiceTxt");
+const userScoreEl = document.getElementById("userScore");
+const compScoreEl = document.getElementById("compScore");
+const tieScoreEl = document.getElementById("tieScore");
 const winnerDisplayEl = document.getElementById("winnerDisplay");
 
 //GLOBAL VARIABLES
@@ -47,10 +50,19 @@ const scissorImages = [
   "./assets/scissors/pexels-pavel-danilyuk-6461489.jpg",
 ];
 
+//helper functions
 function randomImg(arr) {
   let randoNum = Math.floor(Math.random() * arr.length);
   return arr[randoNum];
 }
+
+//pageload "middleware"
+function pageload() {
+  userScoreEl.textContent = `User Score: ${userScore}`;
+  compScoreEl.textContent = `Opponent Score: ${compScore}`;
+  tieScoreEl.textContent = `Ties: ${tieScore}`;
+}
+pageload();
 
 const createCompChoice = function () {
   const choiceNum = Math.floor(Math.random() * 3);

@@ -12,13 +12,13 @@
       <h1>Rock, Paper, Scissors</h1>
       <p>a battle of wits, fists, and fingers</p>
     </header>
-    <h3>Choose a throw to start the game!</h3>
-    <section id="btns">
-      <button id="rockBtn">ROCK</button>
-      <button id="paperBtn">PAPER</button>
-      <button id="scissorsBtn">SCISSORS</button>
-    </section>
     <main>
+      <h3>Choose a throw to start the game!</h3>
+      <section id="btns">
+        <button id="rockBtn">ROCK</button>
+        <button id="paperBtn">PAPER</button>
+        <button id="scissorsBtn">SCISSORS</button>
+      </section>
       <section id="choices">
         <div class="user">
           <div id="userChoiceDisplay">
@@ -31,6 +31,11 @@
           </div>
 
           <h2 class="nameDisplay" id="userName">User</h2>
+        </div>
+        <div id="scoreboard">
+          <div id="userScore"></div>
+          <div id="compScore"></div>
+          <div id="tieScore"></div>
         </div>
         <div class="computer">
           <div id="compChoiceDisplay">

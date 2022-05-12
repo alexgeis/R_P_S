@@ -30,7 +30,7 @@ padding: 2%;
 }
 
 main {
-    padding: 30px;
+    padding: 0 30px;
 }
 
 #btns {
@@ -69,6 +69,19 @@ button:focus {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+}
+
+.user {
+    flex: 1 0 auto;
+}
+
+#scoreboard {
+    flex: 0 1 auto;
+    display: flex;
+    flex-direction: column;
+}
+.computer {
+    flex: 1 0 auto;
 }
 
 .choiceTxt{
