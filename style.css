@@ -1,6 +1,6 @@
 :root {
     --bg-color: #884ab2;
-    --clr-2: #f24b04;
+    --clr-2: #fdc500;
     --clr-3: #d1105a;
 }
 html {
@@ -32,6 +32,39 @@ padding: 2%;
 main {
     padding: 30px;
 }
+
+#btns {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0 80px;
+}
+
+button {
+    text-align: center;
+    width: 200px;
+    margin: 30px 0;
+    padding: 20px 40px;
+    border: var(--clr-2) 4px solid;
+    border-radius: 15px;
+    font-size: 24px;
+    font-weight: bold;
+    box-shadow: 1px 1px 1px 1px;
+}
+
+button:hover {
+    background-color: var(--clr-2);
+    color: white;
+}
+
+button:active {
+    background-color: var(--bg-color) ;
+    color: var(--clr-2);
+    border: none;
+}
+button:focus {
+    box-shadow: 2px 2px 2px 2px;
+}
 #choices {
     display: flex;
     justify-content: space-around;
@@ -51,36 +84,6 @@ main {
 .choiceTxt:hover{
     background-color: var(--bg-color);
     color: white;
-}
-
-#btns {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin: 0 80px;
-}
-
-button {
-    text-align: center;
-    width: 200px;
-    margin: 30px 0;
-    padding: 20px 40px;
-    border: var(--bg-color) 4px solid;
-    border-radius: 15px;
-    font-size: 24px;
-    font-weight: bold;
-}
-
-button:hover {
-    background-color: var(--bg-color);
-    color: white;
-}
-
-button:active {
-
-}
-button:focus {
-
 }
 
 .nameDisplay {
