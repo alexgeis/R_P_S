@@ -8,6 +8,7 @@ This page is a rock, paper, scissors application w/ dynamic images and a scorebo
 - Storage of user scores (local or DB)
 - CSS/JS Animations
 - Winner/loser display improvement - more visuals around winners/losers. Specifically, some visual indicator to point to the winner (a large arrow in the middle, or something similar)
+- Scoreboard styling - something akin to an actual scoreboard
 - Implement a nodeJS/express backend server
 - PWA conversion
 - Deployment - ideally via [Netlify](https://www.netlify.com/)

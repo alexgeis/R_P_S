@@ -1,7 +1,9 @@
 //HTML ELEMENTS
+//buttons
 const rockBtn = document.getElementById("rockBtn");
 const paperBtn = document.getElementById("paperBtn");
 const scissorsBtn = document.getElementById("scissorsBtn");
+//text/img
 const userChoiceEl = document.getElementById("userChoiceTxt");
 const compChoiceEl = document.getElementById("compChoiceTxt");
 const userImgEl = document.getElementById("userChoiceImg");

@@ -8,10 +8,15 @@ html {
     box-sizing: border-box;
 }
 
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
 body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    /* gap: 10px; */
 
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     min-height: 100vh;
@@ -26,8 +31,11 @@ header {
 
 h3 {
 text-align: center;
+width: 500px;
+padding: 2%;
+margin: 0 auto;
 color: var(--bg-color);
-padding: 0 2%;
+border-bottom: var(--bg-color) 2px solid;
 }
 
 #btns {
@@ -85,7 +93,15 @@ main {
     flex: 0 1 auto;
     display: flex;
     flex-direction: column;
-    padding: 20px 10px;
+    padding: 20px 40px;
+    margin: 60px 10px 20px;
+    background-color: black;
+    color: var(--clr-2);
+    font-weight: bold;
+    border-radius: 15px;
+    max-height: 100px;
+    text-shadow: 2px 2px var(--clr-3);
+    text-align: left;
 }
 
 .computer {
@@ -122,7 +138,7 @@ img {
     text-align: center;
     font-size: 24px;
     color: var(--clr-3);
-    padding: 2%;
+    padding: 3%;
 }
 
 footer {
@@ -145,3 +161,32 @@ footer div a {
 footer div a:hover {
     font-size: 120%;
 }
+
+/* MEDIA QUEIRIES */
+@media only screen and (max-width: 1007px) {
+    #choices {
+        flex-direction: column;
+    }
+    #scoreboard {
+        margin: 20px 10px;
+    }
+}
+
+  
+@media only screen and (max-width: 768px) {
+    #btns {
+        flex-direction: column;
+        align-items: center;
+    }
+    h3 {
+        text-align: center;
+        width: 300px;
+    }
+}
+  
+@media only screen and (min-height: 1500px) {
+    body {
+        justify-content:flex-start;
+        gap: 20px;
+    }
+  }
