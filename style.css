@@ -27,8 +27,24 @@ main {
     flex-wrap: wrap;
 }
 
+.choiceTxt{
+    text-align: center;
+    width: 200px;
+    margin: 30px auto;
+    font-size: larger;
+    font-weight: bolder;
+    border: 2px solid darkcyan;
+    border-radius: 20px;
 
+}
+.choiceTxt:hover{
+    background-color: darkcyan;
+    color: white;
+}
 
+button {
+
+}
 
 footer {
     display: flex;
@@ -36,4 +52,17 @@ footer {
     padding: 60px;
     background-color: darkcyan;
     color: white;
+}
+
+footer div {
+    font-size: 24px;
+    font-family: monospace;
+    color: white;
+
+}
+
+footer div a {
+    color: white;
+}
+footer div a:hover {
 }
