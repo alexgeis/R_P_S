@@ -90,6 +90,12 @@ button:focus {
     text-align: center;
 }
 
+#winnerDisplay {
+    text-align: center;
+    font-size: 24px;
+    color: var(--clr-3)
+}
+
 footer {
     display: flex;
     justify-content: center;
