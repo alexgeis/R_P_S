@@ -14,7 +14,6 @@ This page is a rock, paper, scissors application w/ dynamic images and a scorebo
 - Implement a nodeJS/express backend server
 - PWA conversion
 - Deployment - ideally via [Netlify](https://www.netlify.com/)
-- Update responsiveness of main section - could stack more smoothly
 
 ## Dev Contact
 
