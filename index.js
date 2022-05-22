@@ -19,9 +19,9 @@ const savedCompScore = localStorage.getItem("compScore");
 const savedTieScore = localStorage.getItem("tieScore");
 //GLOBAL VARIABLES
 let userChoice = "";
-let userScore = 0 || userScore;
-let compScore = 0 || compScore;
-let tieScore = 0 || tieScore;
+let userScore = 0 || savedUserScore;
+let compScore = 0 || savedCompScore;
+let tieScore = 0 || savedTieScore;
 
 //IMG ARRAYS
 const rockImages = [
@@ -121,7 +121,7 @@ const gameHandler = function () {
     ++userScore;
     userScoreEl.textContent = `User Score: ${userScore}`;
     winnerDisplayEl.textContent = "You win!";
-    localStorage.setItem("savedColor", currentColor);
+    localStorage.setItem("userScore", userScore);
   }
   // Lose scenarios
   if (
@@ -132,7 +132,7 @@ const gameHandler = function () {
     ++compScore;
     compScoreEl.textContent = `Opponent Score: ${compScore}`;
     winnerDisplayEl.textContent = "You lose!";
-    localStorage.setItem("savedColor", currentColor);
+    localStorage.setItem("compScore", compScore);
   }
   // Tie scenarios
   if (
@@ -143,7 +143,7 @@ const gameHandler = function () {
     ++tieScore;
     tieScoreEl.textContent = `Ties: ${tieScore}`;
     winnerDisplayEl.textContent = "It's a tie!";
-    localStorage.setItem("savedColor", currentColor);
+    localStorage.setItem("tieScore", tieScore);
   }
 };
 
