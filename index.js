@@ -17,6 +17,9 @@ const winnerDisplayEl = document.getElementById("winnerDisplay");
 const savedUserScore = localStorage.getItem("userScore");
 const savedCompScore = localStorage.getItem("compScore");
 const savedTieScore = localStorage.getItem("tieScore");
+// if (savedUserScore === null) userScore = 0;
+// if (savedCompScore === null) userScore = 0;
+// if (savedTieScore === null) userScore = 0;
 //GLOBAL VARIABLES
 let userChoice = "";
 let userScore = 0 || savedUserScore;
