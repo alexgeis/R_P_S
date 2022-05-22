@@ -121,6 +121,7 @@ const gameHandler = function () {
     ++userScore;
     userScoreEl.textContent = `User Score: ${userScore}`;
     winnerDisplayEl.textContent = "You win!";
+    localStorage.setItem("savedColor", currentColor);
   }
   // Lose scenarios
   if (
@@ -131,6 +132,7 @@ const gameHandler = function () {
     ++compScore;
     compScoreEl.textContent = `Opponent Score: ${compScore}`;
     winnerDisplayEl.textContent = "You lose!";
+    localStorage.setItem("savedColor", currentColor);
   }
   // Tie scenarios
   if (
@@ -141,6 +143,7 @@ const gameHandler = function () {
     ++tieScore;
     tieScoreEl.textContent = `Ties: ${tieScore}`;
     winnerDisplayEl.textContent = "It's a tie!";
+    localStorage.setItem("savedColor", currentColor);
   }
 };
 
