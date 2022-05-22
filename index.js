@@ -13,11 +13,15 @@ const compScoreEl = document.getElementById("compScore");
 const tieScoreEl = document.getElementById("tieScore");
 const winnerDisplayEl = document.getElementById("winnerDisplay");
 
+//LOCAL STORAGE
+const savedUserScore = localStorage.getItem("userScore");
+const savedCompScore = localStorage.getItem("compScore");
+const savedTieScore = localStorage.getItem("tieScore");
 //GLOBAL VARIABLES
 let userChoice = "";
-let userScore = 0;
-let compScore = 0;
-let tieScore = 0;
+let userScore = 0 || userScore;
+let compScore = 0 || compScore;
+let tieScore = 0 || tieScore;
 
 //IMG ARRAYS
 const rockImages = [
