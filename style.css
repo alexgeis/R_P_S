@@ -110,7 +110,18 @@ main {
     max-height: 100px;
     text-shadow: 2px 2px var(--clr-3);
     text-align: left;
+    position: relative;
 }
+
+#clearScore {
+    position: absolute;
+    top: 18px;
+    right: 12px;
+}
+#clearScore:active {
+    color: white;
+}
+
 
 .computer {
     flex: 1 0 auto;

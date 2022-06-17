@@ -12,14 +12,12 @@ const userScoreEl = document.getElementById("userScore");
 const compScoreEl = document.getElementById("compScore");
 const tieScoreEl = document.getElementById("tieScore");
 const winnerDisplayEl = document.getElementById("winnerDisplay");
+const clearScoreBtn = document.getElementById("clearScore");
 
 //LOCAL STORAGE
 const savedUserScore = localStorage.getItem("userScore");
 const savedCompScore = localStorage.getItem("compScore");
 const savedTieScore = localStorage.getItem("tieScore");
-// if (savedUserScore === null) userScore = 0;
-// if (savedCompScore === null) userScore = 0;
-// if (savedTieScore === null) userScore = 0;
 //GLOBAL VARIABLES
 let userChoice = "";
 let userScore = savedUserScore || 0;
@@ -67,13 +65,11 @@ function randomImg(arr) {
 	return arr[randoNum];
 }
 
-//pageload "middleware"
-function pageload() {
+function renderScore() {
 	userScoreEl.textContent = `User Score: ${userScore}`;
 	compScoreEl.textContent = `Opponent Score: ${compScore}`;
 	tieScoreEl.textContent = `Ties: ${tieScore}`;
 }
-pageload();
 
 const createCompChoice = function () {
 	const choiceNum = Math.floor(Math.random() * 3);
@@ -153,3 +149,16 @@ const gameHandler = function () {
 rockBtn.addEventListener("click", rockHandler);
 paperBtn.addEventListener("click", paperHandler);
 scissorsBtn.addEventListener("click", scissorsHandler);
+clearScoreBtn.addEventListener("click", function () {
+	userScore = 0;
+	compScore = 0;
+	tieScore = 0;
+	localStorage.setItem("userScore", userScore);
+	localStorage.setItem("compScore", userScore);
+	localStorage.setItem("tieScore", userScore);
+	renderScore();
+});
+
+window.onload = () => {
+	renderScore();
+};
