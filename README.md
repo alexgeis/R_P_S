@@ -7,7 +7,7 @@ This page is a rock, paper, scissors application w/ dynamic images and a scorebo
 ## Future Development
 
 - API Integration for random images
-- Storage of user scores (local or DB)
+- Storage of user scores (DB)
 - CSS/JS Animations
 - Winner/loser display improvement - more visuals around winners/losers. Specifically, some visual indicator to point to the winner (a large arrow in the middle, or something similar)
 - Scoreboard styling - something akin to an actual scoreboard
