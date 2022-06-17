@@ -6,6 +6,7 @@ This page is a rock, paper, scissors application w/ dynamic images and a scorebo
 
 ## Future Development
 
+- Turn javascript functions into the revealing module pattern
 - API Integration for random images
 - Storage of user scores (DB)
 - CSS/JS Animations
