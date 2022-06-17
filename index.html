@@ -17,9 +17,13 @@
 		<h3>Choose a throw to start the game!</h3>
 
 		<section id="btns">
-			<button id="rockBtn">ROCK</button>
-			<button id="paperBtn">PAPER</button>
-			<button id="scissorsBtn">SCISSORS</button>
+			<a href="#score-display-container"><button id="rockBtn">ROCK</button></a>
+			<a href="#score-display-container"
+				><button id="paperBtn">PAPER</button></a
+			>
+			<a href="#score-display-container"
+				><button id="scissorsBtn">SCISSORS</button></a
+			>
 		</section>
 
 		<main>
@@ -35,7 +39,7 @@
 					</div>
 					<h2 class="nameDisplay" id="userName">User Throw</h2>
 				</div>
-				<div>
+				<div id="score-display-container">
 					<div id="scoreboard">
 						<div id="userScore"></div>
 						<div id="compScore"></div>
