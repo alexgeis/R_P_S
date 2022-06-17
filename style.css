@@ -93,7 +93,8 @@ main {
     flex-wrap: wrap;
 }
 
-.user {
+.user,
+.computer {
     flex: 1 0 auto;
 }
 
@@ -123,9 +124,6 @@ main {
 }
 
 
-.computer {
-    flex: 1 0 auto;
-}
 
 img {
     width: 300px;
@@ -137,7 +135,7 @@ img {
 .choiceTxt{
     text-align: center;
     width: 200px;
-    margin: 30px auto;
+    margin: 20px auto;
     font-size: larger;
     font-weight: bolder;
     border: 2px solid var(--bg-color);
