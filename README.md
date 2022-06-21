@@ -78,8 +78,6 @@ style="display: block;
     margin-right: auto;
     width: 60%;"/></p></a>
 
-Search and replace keywords: `deployed_link`, `product-screenshot`, `R_P_S`, `Rock, Paper, Scissors`, `This page is a rock, paper, scissors application w/ dynamic images and a scoreboard. A kitten vs. puppy showdown is shown on pageload and from there the user can play an infinite number of R/P/S games.`
-
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 ### Built With
